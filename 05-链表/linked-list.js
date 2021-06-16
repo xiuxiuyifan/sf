@@ -70,7 +70,7 @@ class LinkedList {
   //获取指定位置的data
   getData(position) {
     //边界检测
-    if (position < 0 || position > this.length) return false
+    if (position < 0 || position > this.length - 1) return false
     let index = 0
     let current = this.head
     while (index < position) {
